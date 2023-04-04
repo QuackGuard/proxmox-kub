@@ -4,6 +4,10 @@
     src: kubeadm.yaml
     dest: /etc/kubeadm.yaml
 
+- name: migrate config to new apt_version
+  become: yes
+  command: kubeadm config migrate --old-config /etc/kubeadm.yaml  --new-config /etc/new-kubeadm.yaml
+
 - name: running kubeadm init
   become: yes
-  command: kubeadm init --config /etc/kubeadm.yaml
+  command: kubeadm init --config /etc/new-kubeadm.yaml

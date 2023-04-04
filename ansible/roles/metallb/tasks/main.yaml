@@ -16,7 +16,7 @@
 
 - name: install MetalLB config
   become: yes
-  command: kubectl apply -f /etc/metallb-config.yaml --kubeconfig=/etc/kubernetes/admin.conf
+  command: kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/manifests/metallb-native.yaml
 
 - name: install MetalLB
   become: yes

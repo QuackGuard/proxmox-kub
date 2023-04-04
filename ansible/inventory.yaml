@@ -3,12 +3,12 @@ all:
     control-plane:
       hosts:
         control-plane-0.k8s.cluster:
-          ansible_host: 192.168.50.110
+          ansible_host: 10.200.100.10
     worker-nodes:
       hosts:
         worker-0.k8s.cluster:
-          ansible_host: 192.168.50.120
+          ansible_host: 10.200.100.100
         worker-1.k8s.cluster:
-          ansible_host: 192.168.50.121
+          ansible_host: 10.200.100.101
         worker-2.k8s.cluster:
-          ansible_host: 192.168.50.122
+          ansible_host: 10.200.100.102

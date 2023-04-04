@@ -6,4 +6,4 @@
 
 - name: install Calico
   become: yes
-  command: kubectl apply -f /etc/calico.yaml --kubeconfig=/etc/kubernetes/admin.conf
+  command: kubectl create  -f /etc/calico.yaml --kubeconfig=/etc/kubernetes/admin.conf

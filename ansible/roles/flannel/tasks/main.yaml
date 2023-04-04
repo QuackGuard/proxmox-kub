@@ -1,0 +1,9 @@
+- name: copy flannel manifests
+  become: yes
+  template:
+    src: flannel.yaml
+    dest: /etc/flannel.yaml
+
+- name: install flannel
+  become: yes
+  command: kubectl create -f /etc/flannel.yaml --kubeconfig=/etc/kubernetes/admin.conf

@@ -1,9 +1,9 @@
 variable "pm_api_url" {
-  default = "https://proxmox.local:8006/api2/json"
+  default = "https://PROXMOX-IP:8006/api2/json"
 }
 
 variable "pm_node" {
-  default = "pve"
+  default = "NODENAME"
 }
 
 variable "pm_user" {

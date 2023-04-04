@@ -5,5 +5,5 @@
       - name: kubeadm init
         role: kubeadm-init
 
-      - name: install calico
-        role: calico
+      - name: install flannel
+        role: flannel

@@ -1,17 +1,17 @@
 kubernetes:
-  name: k8s-homelab
-  version: v1.21.6
-  apt_version: 1.21.6-00
+  name: k8s-clusterlab
+  version: v1.26.3
+  apt_version: 1.26.3-00
 
 networking:
-  domain: cluster.local
+  domain: cluster.int.microwavewitness.eu
   pod_subnet: 192.168.64.0/20
   service_subnet: 10.96.0.0/12
 
 packages:
-  containerd_download_url: https://github.com/containerd/containerd/releases/download/v1.5.7/containerd-1.5.7-linux-amd64.tar.gz
-  crictl_download_url: https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.22.0/crictl-v1.22.0-linux-amd64.tar.gz
-  runc_download_url: https://github.com/opencontainers/runc/releases/download/v1.0.2/runc.amd64
+  containerd_download_url: https://github.com/containerd/containerd/releases/download/v1.6.20/containerd-1.6.20-linux-amd64.tar.gz
+  crictl_download_url: https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.26.1/crictl-v1.26.1-linux-amd64.tar.gz
+  runc_download_url: https://github.com/opencontainers/runc/releases/download/v1.1.5/runc.amd64
 
 local:
   artifact_dir: .run
@@ -19,5 +19,5 @@ local:
   cert_hash_file: .run/cert-hash
 
 lab:
-  dns: 192.168.50.1
-  metallb_address_range: 192.168.50.150-192.168.50.160
+  dns: 172.16.0.254
+  metallb_address_range: 10.200.100.30-30.200.100.60
