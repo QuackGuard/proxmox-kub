@@ -3,6 +3,6 @@ all:
     pve:
       hosts:
         proxmox-master:
-          ansible_host: 65.109.53.235
-          ansible_port: 222
-          ansible_user: llama
+          ansible_host: PROXMOX-IP
+          ansible_port: 22
+          ansible_user: Username
