@@ -15,7 +15,7 @@ Software used:
 * `Ansible` for deployment automation
 * `kubeadm` for Kubernetes cluster bootstrapping
 * `containerd` container runtime
-* `Calico` for pod networking
+* `Flannel` for pod networking
 * `MetalLB` for exposing `LoadBalancer` type services
 * `OpenEBS` for volume provisioning
 * `Istio` for ingress and traffic management
